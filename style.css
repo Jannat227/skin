@@ -1,0 +1,239 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-right: 100px;
+}
+
+header .logo {
+  font-size: 32px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.main-text {
+  max-width: 600px;
+}
+
+.main-text h1 {
+  font-size: 48px;
+}
+
+.main-subtext {
+  font-size: 16px;
+}
+
+.main-subtext button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.main-image img {
+  max-width: 100%;
+}
+
+.new-arrivals {
+  text-align: center;
+  padding: 40px;
+}
+
+.new-arrival-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.new-item {
+  text-align: center;
+}
+
+.new-item img {
+  max-width: 250px;
+  height: auto;
+}
+
+.new-look {
+  background-color: #d9d9d9;
+  padding: 40px;
+}
+
+.new-look-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.new-look-text {
+  max-width: 400px;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 40px;
+}
+
+.testimonial-user img {
+  border-radius: 50%;
+}
+
+.latest {
+  text-align: center;
+  padding: 40px;
+}
+
+.latest-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+
+footer .logo {
+    font-size: 30px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer nav {
+  margin: 20px 0;
+}
+
+footer nav a {
+  margin: 0 15px; /* مسافة على اليمين واليسار لكل عنصر */
+}
+
+footer .terms {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer .terms a {
+  margin-right: 300px; /* مــســافــة بــيــن الرابط والنص الثاني */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px; /* قلل البادينج على الهواتف */
+  }
+
+  header nav {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  header nav a {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .main-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .main-text h1 {
+    font-size: 28px;
+  }
+
+  .main-subtext {
+    font-size: 18px;
+  }
+
+  .main-image img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .new-arrival-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .new-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .latest-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .latest-list img {
+    max-width: 80%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  footer .terms a {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* للشاشات الكبيرة */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* للشاشات المتوسطة */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* للهواتف الصغيرة */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
